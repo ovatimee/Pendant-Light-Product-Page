@@ -173,7 +173,7 @@ section .hero {
   flex-direction: column-reverse;
 }
 
-section :where(.left, .right) {
+ section :where(.left, .right) {
   flex: 1 0 50%;
   display: flex;
   align-items: center;
@@ -187,10 +187,12 @@ section .left {
   padding: 5em 0 5em;
 }
 
+
 section .left h1 {
   font-size: 2.5em;
   font-weight: 200;
 }
+
 
 section .left button {
   position: relative;
@@ -283,7 +285,7 @@ section .shade span:nth-child(2) {
     transform: perspective(10px) rotateX(3deg);
     opacity: .35;
     mix-blend-mode: plus-lighter;
-}
+} */
 
 /* ============================carousel=====================================  */
 
@@ -302,6 +304,89 @@ section .shade span:nth-child(2) {
 .carousel ul {
     display: flex;
 }
+
+.carousel ul li {
+    flex: 1 0 33.333%;
+    padding: 0 .5em
+
+}
+
+.carousel .product {
+    position: relative;
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 15px;
+}
+
+.carousel .product .details {
+    padding-right: 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    position: absolute;
+    top: 1.5em;
+    left: 1.5em;
+    width: calc(100% - 3em);
+}
+
+.carousel .product .thumbnail {
+    position: relative;
+    width: 110px;
+    height: auto;
+    margin-left: auto;
+}
+
+.carousel :where(li:nth-child(1),i:nth-child(4),i:nth-child(5)) .product .rating {
+    width: 56px;
+}
+
+.carousel .product h3 {
+    font-size: 0.8em;
+    font-weight: 600;
+    line-height: 1.4;
+    transition: color .3s;
+}
+
+.carousel .product h3:hover {
+    color: var(--primary-color);
+}
+
+.carousel .product .prices {
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.carousel .dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .dots span {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: block;
+    position: relative;
+    background-color: white;
+    border: 10px solid var(--light-color);
+    outline: 0;
+    opacity: 1;
+}
+
+.carousel .dots span.current {
+    width: 50px;
+    background-color: var(--primary-color);
+    transition: width .3s background-color .3s; 
+}
+/* .carousel .product .rating {
+    width: 70px;
+    height: 14px;
+    background-size: contain;
+    background-position: left;
+    background-repeat: repeat;
+    background: url(../assets/2792947_star_xmas_icon.png);
+} */
 /* =============================Media Queries==================================== */
 
 @media screen and (max-width: 481px) {
@@ -330,5 +415,8 @@ section .shade span:nth-child(2) {
   }
   section .left {
     padding: 10em 5em 10em 0;
+  }
+  section .right {
+    padding: 0 0 10em
   }
 }
