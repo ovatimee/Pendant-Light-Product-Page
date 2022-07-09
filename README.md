@@ -5,8 +5,8 @@ This doesn't seem like much but I really enjoyed working on this mini project. T
 
 There're some fews Tips and tricks I learnt I'll share in this Markdown
 
-- Making the light shades with `CSS`
-- Making the pendant lines with `CSS`
+- Made the light shades with `CSS`
+- Made the pendant lines with `CSS`
 - Adding `JS` to toggle the light on and off.
 
 ### **Screenshot on mobile view**
@@ -14,7 +14,7 @@ There're some fews Tips and tricks I learnt I'll share in this Markdown
 <!-- ![](./Screen%20Shot%202022-07-09%20at%2013.05.06.png) -->
 Light Toggled On             |  Light Toggled Off
 :-------------------------:|:-------------------------:
-<img src="./Screen Shot 2022-07-09 at 13.05.06.png" width="300" height="600"/>)  |  <img src="./Screen Shot 2022-07-09 at 13.24.36.png" width="300" height="600"/>
+<img src="./Screen Shot 2022-07-09 at 13.05.06.png" width="300" height="600"/>  |  <img src="./Screen Shot 2022-07-09 at 13.24.36.png" width="300" height="600"/>
 
 
 ### - Live Site URL: [Pendant-Light](https://pendant-light-product-page.vercel.app/)
@@ -35,7 +35,7 @@ Light Toggled On             |  Light Toggled Off
 
 
 
-## What I learned
+### What I learned
 
 I discovered new `CSS` rules whiles working on the shades of the light. `CSS` is powerful but can be intimidating. You must have patience and be able to pay attention to details. And it applies in every aspect of coding. Paying attention to details is really important and helpful.
 
