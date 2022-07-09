@@ -1,50 +1,23 @@
-# Pendant-Light-Product-Page
+## **Pendant-Light-Product-Page**
  
-## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+This doesn't seem like much but I really enjoyed working on this mini project. This made me know how poswerful `CSS` can be
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+There're some fews Tips and tricks I learnt I'll share in this Markdown
 
-## Overview
+- Making the light shades with `CSS`
+- Making the pendant lines with `CSS`
+- Adding `JS` to toggle the light on and off.
 
-### The challenge
+### **Screenshot on mobile view**
 
-Users should be able to:
+<!-- ![](./Screen%20Shot%202022-07-09%20at%2013.05.06.png) -->
+<img src="./Screen Shot 2022-07-09 at 13.05.06.png" width="300" height="600"/>
+<img src="./Screen Shot 2022-07-09 at 13.24.36.png" width="300" height="600"/>
+\
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Select and submit a number rating
-- See the "Thank you" card state after submitting a rating
 
-### Screenshot
-
-![](https://github.com/ovatimee/Pendant-Light-Product-Page/blob/main/Screen%20Shot%202022-07-09%20at%2013.05.06.png 250x250)
-
-![](./Screen Shot 2022-07-09 at 13.24.36.png)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Pendant-Light](https://pendant-light-product-page.vercel.app/)
 
 ## My process
 
@@ -55,59 +28,55 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+### **I decided to code this in Vanilla**
 
-### What I learned
+>_I really like doing things the native way as well. I mean it doesnt hurt and once you have a strong fundamentals of the basis. You should be pretty much comfortable doing anything as!_
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
-To see how you can add code snippets, see below:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+## What I learned
+
+I discovered new `CSS` rules whiles working on the shades of the light. `CSS` is powerful but can be intimidating. You must have patience and be able to pay attention to details. And it applies in every aspect of coding. Paying attention to details is really important and helpful.
+
+
+>I created the shades with two spans using ```position: absolute``` to position under the light frame and the rules below made the rest of the magic for me
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.shade span {
+    background: linear-gradient(180deg, #ff6d28 0%, transparent 100%);
+    transform: perspective(10px) rotateX(3deg);
+    opacity: .35;
+    mix-blend-mode: plus-lighter;
 }
 ```
+
+
+### SwiperJS code snippet
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 1,
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    cliackable: true,
+  },
+  breakpoints: {
+    641: { slidesPerView: 2 },
+    992: { slidesPerView: 3 },
+  },
+});
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+**Note: I used [SwiperJS](https://swiperjs.com/) for the carousel. This is not my first time using the library but just adding it incase anyone ever wondered..**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+>I really liked working on the backend cus I love writing Javascript but this mini project has opened my eyes to the wonders of `CSS` and I've decided to do daily challenges to improve my css skils
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
 - [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
