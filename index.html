@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styless.css" />
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
     <title>Pendant Light</title>
   </head>
   <body>
@@ -37,13 +41,13 @@
                   ></path>
                 </svg>
               </a>
-              <a href="" class="t-light"
+              <a href="#" class="t-light"
                 ><svg
                   stroke="currentColor"
                   fill="none"
                   stroke-width="0"
                   viewBox="0 0 24 24"
-                  height="2em"
+                  height="1.5em"
                   width="2em"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -87,8 +91,8 @@
           <div class="carousel">
             <div class="row">
               <div class="swiper">
-                <ul>
-                  <li>
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
                     <div class="product">
                       <div class="details">
                         <div class="rating"></div>
@@ -102,7 +106,7 @@
                       </div>
                     </div>
                   </li>
-                  <li>
+                  <li class="swiper-slide">
                     <div class="product">
                       <div class="details">
                         <div class="rating"></div>
@@ -116,7 +120,7 @@
                       </div>
                     </div>
                   </li>
-                  <li>
+                  <li class="swiper-slide">
                     <div class="product">
                       <div class="details">
                         <div class="rating"></div>
@@ -130,42 +134,42 @@
                       </div>
                     </div>
                   </li>
-                  <li>
+                  <li class="swiper-slide">
                     <div class="product">
                       <div class="details">
                         <div class="rating"></div>
                         <h3><a href=""> Bellaniks Wood Light</a></h3>
                         <span class="prices">$59.99</span>
                       </div>
-                      <div class="thumnail">
+                      <div class="thumbnail">
                         <a href="#">
                           <img src="./assets/product-4.png" alt="" />
                         </a>
                       </div>
                     </div>
                   </li>
-                  <li>
+                  <li class="swiper-slide">
                     <div class="product">
                       <div class="details">
                         <div class="rating"></div>
                         <h3><a href=""> Bellaniks Wood Light</a></h3>
                         <span class="prices">$59.99</span>
                       </div>
-                      <div class="thumnail">
+                      <div class="thumbnail">
                         <a href="#">
                           <img src="./assets/product-5.png" alt="" />
                         </a>
                       </div>
                     </div>
                   </li>
-                  <li>
+                  <li class="swiper-slide">
                     <div class="product">
                       <div class="details">
                         <div class="rating"></div>
                         <h3><a href=""> Bellaniks Wood Light</a></h3>
                         <span class="prices">$59.99</span>
                       </div>
-                      <div class="thumnail">
+                      <div class="thumbnail">
                         <a href="#">
                           <img src="./assets/product-6.png" alt="" />
                         </a>
@@ -173,7 +177,7 @@
                     </div>
                   </li>
                 </ul>
-                <div class="dots">
+                <div class="dots swiper-pagination"">
                     <span class="current"></span>
                     <span></span>
                     <span></span>
@@ -184,6 +188,7 @@
         </div>
       </section>
     </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>
