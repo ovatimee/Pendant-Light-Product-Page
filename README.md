@@ -12,12 +12,12 @@ There're some fews Tips and tricks I learnt I'll share in this Markdown
 ### **Screenshot on mobile view**
 
 <!-- ![](./Screen%20Shot%202022-07-09%20at%2013.05.06.png) -->
-<img src="./Screen Shot 2022-07-09 at 13.05.06.png" width="300" height="600"/>
-<img src="./Screen Shot 2022-07-09 at 13.24.36.png" width="300" height="600"/>
-\
+Light Toggled On             |  Light Toggled Off
+:-------------------------:|:-------------------------:
+<img src="./Screen Shot 2022-07-09 at 13.05.06.png" width="300" height="600"/>)  |  <img src="./Screen Shot 2022-07-09 at 13.24.36.png" width="300" height="600"/>
 
 
-- Live Site URL: [Pendant-Light](https://pendant-light-product-page.vercel.app/)
+### - Live Site URL: [Pendant-Light](https://pendant-light-product-page.vercel.app/)
 
 ## My process
 
